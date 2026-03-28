@@ -26,7 +26,7 @@ How to Run
 14.	Two figures will pop up: the demand curve and the residual plot.
 15.	A new CSV file with the predicted values will also be saved in the same folder.
 Dataset
-File: Rice_Price_and_Demand.csv
+File: Rice Price and Demand.csv
 •	Source: Philippine Statistics Authority (PSA)
 •	Years covered: 2000 to 2022 (23 data points)
 •	Column 1 — Year
