@@ -1,6 +1,6 @@
 Repository: price-demand-model
 Course: Math Modeling — Final Course Output
-Members: Noreen, Marianne, Raven, Sarah
+Members: Amba, Capucion, Mendoza, Santos
 Repository Structure
 price-demand-model/
 ├── data/
