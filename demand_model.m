@@ -1,5 +1,5 @@
 % Linear Demand Model — Philippine Rice (2000–2022)
-% Math Modeling FCO | Raven
+% Math Modeling FCO
 
 % load dataset
 data = readtable('Rice_Price_and_Demand.csv');
