@@ -4,7 +4,7 @@ Members: Amba, Capucion, Mendoza, Santos
 Repository Structure
 price-demand-model/
 ├── data/
-│   └── Rice_Price_and_Demand.csv
+│   └── Rice Price and Demand.csv
 ├── code/
 │   └── demand_model.m
 ├── results/
@@ -12,39 +12,36 @@ price-demand-model/
 │   └── residual_plot.png
 └── README.md
 About This Project
-This is our Math Modeling FCO. We built an exponential demand model using Philippine rice retail price and demand data from 2000 to 2022. The model Q = 7.7414 x e^(0.0156P) was fitted in MATLAB using fminsearch(). We got R² = 0.7022, MAE = 0.9266 MMT, and RMSE = 1.1347 MMT.
+This repository contains the MATLAB implementation of a linear demand model fitted to annual Philippine rice retail price and demand data (2000–2022). The model Q = 6.6489 + 0.1942P was estimated using the Nelder-Mead Simplex algorithm via fminsearch(). Model performance: R² = 0.7103, MAE = 0.9236 MMT, RMSE = 1.1191 MMT, SSR = 28.8028.
 Requirements
-•	MATLAB (any recent version)
-•	No extra toolboxes needed
-•	Rice_Price_and_Demand.csv must be in the same folder as demand_model.m
+•	MATLAB (R2021a or later recommended)
+•	No additional toolboxes required — fminsearch() is built into standard MATLAB
+•	Rice_Price_and_Demand.csv must be in the same working directory as demand_model.m
 How to Run
-9.	Download or clone the repository.
-10.	Open MATLAB and go to the folder where the files are saved.
-11.	Open demand_model.m.
+9.	Clone or download the repository.
+10.	Open MATLAB and set the working directory to the folder containing both demand_model.m and Rice_Price_and_Demand.csv.
+11.	Open demand_model.m in the MATLAB Editor.
 12.	Press F5 or click Run.
-13.	You will see the parameter estimates and error metrics in the Command Window.
-14.	Two figures will pop up: the demand curve and the residual plot.
-15.	A new CSV file with the predicted values will also be saved in the same folder.
-Dataset
-File: Rice Price and Demand.csv
+13.	The Command Window will display iteration progress, parameter estimates (a, b), final SSR, R², MAE, and RMSE.
+14.	Figure 1 (demand curve) and Figure 2 (residual plot) will open automatically.
+15.	A new file Rice_Price_and_Demand_with_Predictions.csv will be saved in the working directory.
+Dataset Description
+File: Rice_Price_and_Demand.csv
 •	Source: Philippine Statistics Authority (PSA)
-•	Years covered: 2000 to 2022 (23 data points)
-•	Column 1 — Year
-•	Column 2 — Rice Price Retail (PHP/kg) — this is P in the model
-•	Column 3 — Demand (MMT) — this is Q in the model
+•	Coverage: 2000–2022 (23 annual observations)
+•	Column 1 — Year: calendar year of observation
+•	Column 2 — Rice Price Retail (PHP/kg): annual average retail price, used as P
+•	Column 3 — Demand (MMT): total annual rice demand, used as Q
 Expected Output
 --- PARAMETER ESTIMATES ---
-a = 7.7414
-b = 0.0156
-Iterations = [value]
-SSR = [value]
+a = 6.6489
+b = 0.1942
+Iterations: [value]  |  SSR: 28.8028
 
 --- ERROR METRICS ---
-R2   = 0.7022
-MAE  = 0.9266 MMT
-RMSE = 1.1347 MMT
+R2: 0.7103  |  MAE: 0.9236 MMT  |  RMSE: 1.1191 MMT
 Notes
-•	No toolbox needed. fminsearch() is built into MATLAB.
-•	b is positive because rice demand went up over time due to population growth, not because of price. We explain this in the paper.
-•	Make sure the CSV file is in the same folder before running.
-•	Each group member should commit their own files to the repo.
+•	No Statistics and Machine Learning Toolbox is required. The implementation relies solely on fminsearch(), which is available in all standard MATLAB installations.
+•	The fitted model produces a positive slope (b > 0) because aggregate rice demand increased alongside prices over the 22-year study period, primarily due to population growth. This is discussed in the Limitations section of the paper.
+•	Ensure that Rice_Price_and_Demand.csv is in the same directory as demand_model.m before running the script.
+•	All group members are expected to make individual commits to their respective sections of the repository to satisfy the collaborative version history requirement.
