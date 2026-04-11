@@ -109,8 +109,3 @@ Output `.png` files will be saved to the working directory. Move them to `figure
 Philippine Statistics Authority (PSA). Rice retail prices and demand data, 2000–2022.
 Retrieved from [https://psa.gov.ph](https://psa.gov.ph)
 
----
-
-## Video Presentation
-
-See [`video_link.md`](video_link.md) for the link to our video presentation.
