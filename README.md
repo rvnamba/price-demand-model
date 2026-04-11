@@ -24,7 +24,7 @@ The linear model `Q = 6.6489 + 0.1942P` achieved R² = 0.7103, outperforming the
 ## Repository Structure
 
 ```
-rice-demand-model/
+price-demand-model/
 │
 ├── README.md
 │
