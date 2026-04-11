@@ -38,15 +38,11 @@ price-demand-model/
 │   ├── fittedline.m       # Figure 4: fitted linear demand curve
 │   └── residualplot.m     # Figure 5: residual bar chart
 │
-├── figures/
-│   ├── scatterplot.png
-│   ├── fittedline.png
-│   └── residualplot.png
-│
-├── paper/
-  ├── Math_Modeling_FCO.tex    # LaTeX source
-  ├── Math_Modeling_FCO.pdf    # compiled paper
-  └── references.bib
+└── figures/
+    ├── scatterplot.png
+    ├── fittedline.png
+    └── residualplot.png
+
 ```
 
 ---
