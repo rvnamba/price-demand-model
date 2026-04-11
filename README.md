@@ -44,11 +44,9 @@ rice-demand-model/
 │   └── residualplot.png
 │
 ├── paper/
-│   ├── Math_Modeling_FCO.tex    # LaTeX source
-│   ├── Math_Modeling_FCO.pdf    # compiled paper
-│   └── references.bib
-│
-└── video_link.md          # link to video presentation
+  ├── Math_Modeling_FCO.tex    # LaTeX source
+  ├── Math_Modeling_FCO.pdf    # compiled paper
+  └── references.bib
 ```
 
 ---
